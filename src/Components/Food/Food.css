@@ -1,0 +1,68 @@
+.food-container {
+  margin: auto;
+  width: 90%;
+  padding: 3rem 1rem;
+}
+.featured-text {
+  color: #ea580c;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.filter-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.filter-type button {
+  margin: 4px;
+  border-radius: 0.75rem;
+  border: 1px solid #ea580c;
+  color: #ea580c;
+  background-color: white;
+  padding: 4px 20px;
+}
+.filter-type button:hover {
+  color: white;
+  background-color: #ea580c;
+}
+@media (min-width: 600px) {
+  .filter-container {
+    flex-direction: row;
+  }
+  .food-data-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.food-data-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1rem;
+  gap: 1.5rem;
+}
+.food-card {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.food-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem  0.5rem ;
+}
+.food-card-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
